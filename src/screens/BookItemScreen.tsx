@@ -29,7 +29,7 @@ const BookItemScreen: F<StackScreenProps<ScreenNames.BookItem>> = ({ route }) =>
             <Header title={book?.title} />
 
             {book ? (
-                <ScrollView>
+                <ScrollView showsVerticalScrollIndicator={false}>
                     <Container
                         style={[styles.container, isLandscape && styles.landscapeContainer]}
                         edges={['left', 'right']}
